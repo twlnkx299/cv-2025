@@ -1,8 +1,12 @@
 import React,{useState,useEffect} from 'react'
 import {Grid,Box, Typography} from '@mui/material';
-import  Profile from './assets/pic.jfif';
+import  Profile from '../../assets/pic.jfif';
+import ReadMore from '../components/shortener.jsx';
+import '../../App.css';
 
 const cv = () => {
+    //addr must be  just 30 chars long
+    const addr ="#1 Tondo Divisoria Market, Metro Manila NCR#1 Tondo Divisoria Market, Metro Manila NCR";
   return (
     <Grid container sx={{ minHeight: "100vh", width:"100vw", border:"1px solid black", overflowY:'auto',overflowX:'hidden' }}>
        <Box sx={{display:'flex',flexDirection:'column',gap:1}}>
@@ -33,27 +37,28 @@ const cv = () => {
             <Box 
                 sx={{
                     backgroundColor:'#D7E0EB',
-                                        borderRadius:2,
-                    width:{ xs: 100, sm: 150, md: 250,lg:350,xl:500},
-                    height:{ xs: 170, sm: 180, md: 190,lg:200,xl:210}}}>
+                    borderRadius:2,
+                    width:{ xs: 110, sm: 150, md: 250,lg:350,xl:500},
+                    height:{ xs: 170, sm: 180, md: 190,lg:200,xl:210},
+                    }}>
                 <Box sx={{
                     display:'flex',
                     flexDirection:'column',
                     gap:2,
                 }}>
                     <Typography variant="h1"sx={{fontSize:{ xs:12, sm:14, md:16, lg:18, xl:20}}}>Personal Details</Typography>
-                    <Box sx={{display:'flex',flexDirection:'row',alignItems:'center',border:'1px solid black'}}>
+                    <Box sx={{display:'flex',flexDirection:'row',alignItems:'center',border:'1px solid black',}}>
                         <Box sx={{display:'flex',justifyContent:'start'}}>
                         <Typography variant="h1" sx={{fontSize:{ xs:6, sm:9, md:16, lg:18, xl:20},minWidth:80}}>Name:</Typography></Box>
-                        <Typography variant="h1" sx={{fontSize:{ xs:6, sm:9, md:16, lg:18, xl:20}}}>Twinkle D. Ascano</Typography>
+                        <Typography variant="h1" sx={{fontSize:{ xs:6, sm:9, md:16, lg:18, xl:20}}}>Miki Matsubara</Typography>
                     </Box>
                     <Box sx={{display:'flex',flexDirection:'row',alignItems:'center',border:'1px solid black'}}>
-                        <Typography variant="h1" sx={{fontSize:{ xs:6, sm:9, md:16, lg:18, xl:20},minWidth:80}}>Birthday:</Typography>
-                        <Typography variant="h1" sx={{fontSize:{ xs:6, sm:9, md:16, lg:18, xl:20}}}>December 14, 2002</Typography>
+                        <Typography variant="h1" sx={{fontSize:{ xs:6, sm:9, md:16, lg:18, xl:20},minWidth:80,}}>Birthday:</Typography>
+                        <Typography variant="h1" sx={{fontSize:{ xs:6, sm:9, md:16, lg:18, xl:20},border:'1px solid black'}}>December 14, 2002</Typography>
                     </Box>
-                    <Box sx={{display:'flex',flexDirection:'row',alignItems:'center',border:'1px solid black'}}>
+                    <Box className="scrollableAddress" sx={{display:'flex',flexDirection:'row',alignItems:'center',border:'1px solid black',whiteSpace:'nowrap',transition:'all 0.3 ease',}}>
                         <Typography variant="h1" sx={{fontSize:{ xs:6, sm:9, md:16, lg:18, xl:20},minWidth:80}}>Address:</Typography>
-                        <Typography variant="h1" sx={{fontSize:{ xs:6, sm:9, md:16, lg:18, xl:20}}}>South Signal Village, Taguig City Metro Manila NCR</Typography>
+                        <Typography variant="h1" sx={{fontSize:{ xs:6, sm:9, md:16, lg:18, xl:20},border:'1px solid black',whiteSpace:'nowrap',overflow:'auto',}}>#1 Tondo Divisoria Market, Metro Manila NCR#1 Tondo Divisoria Market, Metro Manila NCR</Typography>
                     </Box>
                 </Box>
             </Box>
