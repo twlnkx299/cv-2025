@@ -5,7 +5,6 @@ import './App.css'
 import CV from './views/userCv/cv.jsx';
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
