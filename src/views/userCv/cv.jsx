@@ -22,6 +22,7 @@ const cv = () => {
                 height:'31vh',
                 justifyContent:'center',
                 alignItems:'center',
+                p:2
                 }}>
             {/* children boxes */}
             <Box
@@ -40,6 +41,8 @@ const cv = () => {
                     borderRadius:2,
                     width:{ xs: 110, sm: 150, md: 250,lg:350,xl:500},
                     height:{ xs: 170, sm: 180, md: 190,lg:200,xl:210},
+                    border:'1px solid black',
+                    p:1,
                     }}>
                 <Box sx={{
                     display:'flex',
@@ -50,12 +53,12 @@ const cv = () => {
                         sx={{fontSize:{ xs:12, sm:14, md:16, lg:18, xl:20}}}>Personal Details</Typography>
                     
                     {/* name box */}
-                    <Box sx={{display:'flex',flexDirection:'row',alignItems:'center',border:'1px solid black'}}>
+                    <Box className="scrollableAddress" sx={{display:'flex',flexDirection:'row',alignItems:'center',overflow:'auto'}}>
                         <Box>
-                            <Typography variant="h1" sx={{fontSize:{ xs:6, sm:9, md:16, lg:18, xl:20},minWidth:50,border:'1px solid black',textAlign:'right'}}>Name:</Typography>
+                            <Typography variant="h1" sx={{fontSize:{ xs:6, sm:9, md:16, lg:18, xl:20},minWidth:50,textAlign:'right'}}>Name:</Typography>
                         </Box>
                         <Box sx={{
-                                border:'1px solid black', 
+                                // border:'1px solid black', 
                                 width:{ xs:6, sm:9, md:16, lg:18, xl:20},
                                 height:{ xs:6, sm:9, md:16, lg:18, xl:20},
                                 flexShrink:0
@@ -64,12 +67,12 @@ const cv = () => {
                         <Typography variant="h1" 
                             sx={{
                                 fontSize:{ xs:6, sm:9, md:16, lg:18, xl:20},
-                                border:'1px solid black'}}>Mikikoki Matsubara
+                                whiteSpace:'nowrap'}}>MikikokiMatsubaramikikortbhrttyunjydj
                         </Typography>
                     </Box>
 
                     {/* birthday box */}
-                    <Box sx={{display:'flex',flexDirection:'row',alignItems:'center',border:'1px solid black'}}>
+                    <Box sx={{display:'flex',flexDirection:'row',alignItems:'center',whiteSpace:'nowrap',overflow:'auto'}}>
                         <Box>
                             <Typography variant="h1" sx={{
                                 fontSize:{ xs:6, sm:9, md:16, lg:18, xl:20},
@@ -78,25 +81,25 @@ const cv = () => {
                             </Typography>
                         </Box>
                         <Box sx={{
-                            border:'1px solid black', 
+                            // border:'1px solid black', 
                             width:{ xs:6, sm:9, md:16, lg:18, xl:20},
                             height:{ xs:6, sm:9, md:16, lg:18, xl:20},
                             flexShrink:0}}>
                         </Box>
                         <Typography variant="h1" sx={{
                             fontSize:{ xs:6, sm:9, md:16, lg:18, xl:20},
-                            border:'1px solid black'}}>
+                            }}>
                                 December 14, 2002
                         </Typography>
                     </Box>
 
                     {/* addr box */}
-                    <Box className="scrollableAddress" sx={{display:'flex',flexDirection:'row',alignItems:'center',border:'1px solid black',whiteSpace:'nowrap',transition:'all 0.3 ease'}}>
+                    <Box className="scrollableAddress" sx={{display:'flex',flexDirection:'row',alignItems:'center',whiteSpace:'nowrap',transition:'all 0.3 ease',overflow:'auto'}}>
                         <Box>
-                            <Typography variant="h1" sx={{fontSize:{ xs:6, sm:9, md:16, lg:18, xl:20},border:'1px solid black',minWidth:80,textAlign:'right'}}>Address Address:</Typography>
+                            <Typography variant="h1" sx={{fontSize:{ xs:6, sm:9, md:16, lg:18, xl:20},minWidth:80,textAlign:'right'}}>Address Address:</Typography>
                         </Box>
                         <Box sx={{
-                            border:'1px solid black', 
+                            //border:'1px solid black', 
                             width:{ xs:6, sm:9, md:16, lg:18, xl:20},
                             height:{ xs:6, sm:9, md:16, lg:18, xl:20},
                             flexShrink:0}}>
@@ -105,7 +108,7 @@ const cv = () => {
                             fontSize:{ xs:6, sm:9, md:16, lg:18, xl:20},
                             order:'1px solid black',
                             whiteSpace:'nowrap',
-                            overflow:'auto',}}>
+                            }}>
                                 #1 Tondo Divisoria Market, Metro Manila NCR#1 Tondo Divisoria Market, Metro Manila NCR
                         </Typography>
                     </Box>
@@ -117,65 +120,61 @@ const cv = () => {
                     borderRadius:2,
                     width:{ xs: 110, sm: 150, md: 250,lg:350,xl:500},
                     height:{ xs: 170, sm: 180, md: 190,lg:200,xl:210},
+                    p:1
                     }}>
-                    <Box sx={{display:'flex',flexDirection:'column',gap:3,}}>
+                    <Box sx={{display:'flex',flexDirection:'column',gap:3,p:2}}>
                     <Typography variant="h1"sx={{fontSize:{ xs:12, sm:14, md:16, lg:18, xl:20}}}>Contact Details</Typography>
                     
-                    {/* email box */}
-                    <Box sx={{display:'flex',flexDirection:'row',alignItems:'center',border:'1px solid black'}}>
-                        <Typography variant="h1" sx={{
-                            fontSize:{ xs:6, sm:9, md:16, lg:18, xl:20},
-                            minWidth:50,
-                            border:'1px solid black',
-                            textAlign:'right'}}>
-                                Emai:
-                        </Typography>
-                        <Box sx={{
-                            border:'1px solid black', 
-                            width:{ xs:6, sm:9, md:16, lg:18, xl:20},
-                            height:{ xs:6, sm:9, md:16, lg:18, xl:20},
-                            flexShrink:0}}>
+                    {/* gmail box */}
+                    <Box className="scrollableAddress" sx={{display:'flex',flexDirection:'row',alignItems:'center',whiteSpace:'nowrap',overflow:'auto'}}>
+                        <Box>
+                            <Typography variant="h1" sx={{fontSize:{ xs:6, sm:9, md:16, lg:18, xl:20},minWidth:50,textAlign:'right'}}>Name:</Typography>
                         </Box>
-                        <Typography variant="h1" sx={{fontSize:{ xs:6, sm:9, md:16, lg:18, xl:20},border:'1px solid black'}}>sample@gmail.com</Typography>
+                        <Box sx={{
+                                width:{ xs:6, sm:9, md:16, lg:18, xl:20},
+                                height:{ xs:6, sm:9, md:16, lg:18, xl:20},
+                                flexShrink:0
+                                }}>
+                        </Box>
+                        <Typography variant="h1" 
+                            sx={{
+                                fontSize:{ xs:6, sm:9, md:16, lg:18, xl:20},
+                                whiteSpace:'nowrap'}}>sample@gmail.comdgbvfgg
+                        </Typography>
                     </Box>
 
                     {/* number box */}
-                    <Box sx={{display:'flex',flexDirection:'row',alignItems:'center',border:'1px solid black',}}>
+                    <Box sx={{display:'flex',flexDirection:'row',alignItems:'center'}}>
                         <Typography variant="h1" sx={{
                             fontSize:{ xs:6, sm:9, md:16, lg:18, xl:20},
                             minWidth:50,
-                            border:'1px solid black',
                             textAlign:'right'}}>
                                 Mobile Number:
                         </Typography>
                         <Box sx={{
-                            border:'1px solid black', 
                             width:{ xs:6, sm:9, md:16, lg:18, xl:20},
                             height:{ xs:6, sm:9, md:16, lg:18, xl:20},
                             flexShrink:0}}>
                         </Box>
-                        <Typography variant="h1" sx={{fontSize:{ xs:6, sm:9, md:16, lg:18, xl:20},border:'1px solid black'}}>+639877621264</Typography>
+                        <Typography variant="h1" sx={{fontSize:{ xs:6, sm:9, md:16, lg:18, xl:20}}}>+639877621264</Typography>
                     </Box>
                     {/* personal acct box */}
-                    <Box className="scrollableAddress" sx={{display:'flex',flexDirection:'row',alignItems:'center',border:'1px solid black',transition:'all 0.3 ease'}}>
+                    <Box className="scrollableAddress" sx={{display:'flex',flexDirection:'row',alignItems:'center',transition:'all 0.3 ease',whiteSpace:'nowrap',overflow:'auto'}}>
                         <Typography variant="h1" sx={{
                             fontSize:{ xs:6, sm:9, md:16, lg:18, xl:20},
-                            border:'1px solid black',
                             minWidth:80,
-                            textAlign:'right'}}>
+                            textAlign:'right',}}>
                                 Personal Account:
                         </Typography>
-                        <Box sx={{
-                            border:'1px solid black', 
+                        <Box sx={{ 
                             width:{ xs:6, sm:9, md:16, lg:18, xl:20},
                             height:{ xs:6, sm:9, md:16, lg:18, xl:20},
                             flexShrink:0}}>
                         </Box>
                         <Typography variant="h1" sx={{
                             fontSize:{ xs:6, sm:9, md:16, lg:18, xl:20},
-                            border:'1px solid black',
                             whiteSpace:'nowrap',
-                            overflow:'auto',}}>
+                            }}>
                                 https://www.facebook.com/facebook
                         </Typography>
                     </Box>
@@ -192,7 +191,7 @@ const cv = () => {
                 justifyContent:'center',
                 alignItems:'center',
                 width:'100vw',
-                height:'30vh'}}>
+                height:'30vh',p:2}}>
             <Box sx={{
                 //border:'1px solid black',
                 width:{ xs: 100, sm: 150, md: 250,lg:400,xl:450},
