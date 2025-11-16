@@ -11,6 +11,7 @@ const cv = () => {
     <Grid container sx={{ minHeight: "100vh", width:"100vw",overflowY:'auto',overflowX:'hidden'}}>
        <Box sx={{display:'flex',flexDirection:'column',gap:1}}>
         <Box sx={{backgroundColor:'#24457A', height:"10vh", width:"100vw",display:'flex',flexDirection:'column',gap:3}}></Box>
+       
        {/* parent box ng upperbox */}
         <Box sx={{
                 display:'flex',
