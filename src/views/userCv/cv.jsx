@@ -5,6 +5,7 @@ import ReadMore from '../components/shortener.jsx';
 import '../../App.css';
 
 const cv = () => {
+    
     //addr must be  just 30 chars long
     const addr ="#1 Tondo Divisoria Market, Metro Manila NCR#1 Tondo Divisoria Market, Metro Manila NCR";
   return (
