@@ -1,13 +1,30 @@
 import React,{useState,useEffect} from 'react'
-import {Grid,Box, Typography} from '@mui/material';
+import {Grid,Box, Typography,Link} from '@mui/material';
 import  Profile from '../../assets/pic.jfif';
-import ReadMore from '../components/shortener.jsx';
 import '../../App.css';
+import Wordpress from '../../assets/cvpic/wordpress.png';
+import Ts from '../../assets/cvpic/ts.png';
+import Trello from '../../assets/cvpic/trello.png';
+import Sql from '../../assets/cvpic/sql.png';
+import Mern from '../../assets/cvpic/mern.png';
+import Laravel from '../../assets/cvpic/laravel.png';
+import Jsreact from '../../assets/cvpic/js&react.jpg';
+import Joom from '../../assets/cvpic/joomlah.png';
+import Jira from '../../assets/cvpic/jira.png';
+import Html from '../../assets/cvpic/html.png';
+import Github from '../../assets/cvpic/github.png';
+import Git from '../../assets/cvpic/Git.png';
+import Figma from '../../assets/cvpic/Figma.png';
+import Electron from '../../assets/cvpic/electron.png';
+import Css from '../../assets/cvpic/css2.png';
+import Cicd from '../../assets/cvpic/cicdd.png';
+import C from '../../assets/cvpic/c++.png';
 
 const cv = () => {
     
     //addr must be  just 30 chars long
     const addr ="#1 Tondo Divisoria Market, Metro Manila NCR#1 Tondo Divisoria Market, Metro Manila NCR";
+    const skillsimg = [Git,Github,Css,Html,Jsreact,Ts,Sql,Wordpress,Joom,Laravel,Trello,Jira,Figma,Electron,Cicd,Mern,C];
   return (
     <Grid container sx={{ minHeight: "100vh", width:"100vw",overflowY:'auto',overflowX:'hidden'}}>
        <Box sx={{display:'flex',flexDirection:'column',gap:1}}>
@@ -74,10 +91,10 @@ const cv = () => {
                     </Box>
 
                     {/* birthday box */}
-                    <Box sx={{display:'flex',flexDirection:'row',alignItems:'center',whiteSpace:'nowrap',overflow:'auto'}}>
+                    <Box className="scrollableAddress" sx={{display:'flex',flexDirection:'row',alignItems:'center',whiteSpace:'nowrap',overflow:'auto',whitespace:'nowrap',overflowX:'auto'}}>
                         <Box>
                             <Typography variant="h1" sx={{
-                                fontSize:{ xs:6, sm:9, md:16, lg:18, xl:20},
+                                fontSize:{ xs:6, sm:9, md:16, lg:18,    xl:20},
                                 minWidth:50,textAlign:'right'}}>
                                 Birthdate:
                             </Typography>
@@ -124,7 +141,7 @@ const cv = () => {
                     height:{ xs: 170, sm: 180, md: 190,lg:200,xl:210},
                     p:1
                     }}>
-                    <Box sx={{display:'flex',flexDirection:'column',gap:3,p:2}}>
+                    <Box sx={{display:'flex',flexDirection:'column',gap:3,}}>
                     <Typography variant="h1"sx={{fontSize:{ xs:12, sm:14, md:16, lg:18, xl:20}}}>Contact Details</Typography>
                     
                     {/* gmail box */}
@@ -151,7 +168,7 @@ const cv = () => {
                             fontSize:{ xs:6, sm:9, md:16, lg:18, xl:20},
                             minWidth:50,
                             textAlign:'right'}}>
-                                Mobile Number:
+                                Number:
                         </Typography>
                         <Box sx={{
                             width:{ xs:6, sm:9, md:16, lg:18, xl:20},
@@ -162,12 +179,12 @@ const cv = () => {
                     </Box>
                     {/* personal acct box */}
                     <Box className="scrollableAddress" sx={{display:'flex',flexDirection:'row',alignItems:'center',transition:'all 0.3 ease',whiteSpace:'nowrap',overflow:'auto'}}>
-                        <Typography variant="h1" sx={{
+                        <Box><Typography variant="h1" sx={{
                             fontSize:{ xs:6, sm:9, md:16, lg:18, xl:20},
                             minWidth:80,
                             textAlign:'right',}}>
                                 Personal Account:
-                        </Typography>
+                        </Typography></Box>
                         <Box sx={{ 
                             width:{ xs:6, sm:9, md:16, lg:18, xl:20},
                             height:{ xs:6, sm:9, md:16, lg:18, xl:20},
@@ -177,9 +194,44 @@ const cv = () => {
                             fontSize:{ xs:6, sm:9, md:16, lg:18, xl:20},
                             whiteSpace:'nowrap',
                             }}>
-                                https://www.facebook.com/facebook
+                                <Link href="#">https://www.facebook.com/facebook</Link>
                         </Typography>
                     </Box>
+                </Box>
+            </Box>
+        </Box>
+
+        {/* skills pics */}
+        <Box 
+            sx={{
+                border:'1px soplid black',
+                width:'100vw',
+                height:'10vh',
+                justifyContent:'center',
+                alignItems:'center',
+                display:'flex',
+            }}>
+            <Box 
+                sx={{
+                    border:'1px soplid black',
+                    width:'90vw',
+                    height:'10vh',
+                    backgroundColor:'#D7E0EB',
+                    borderRadius:2,
+                }}
+                className="scroller"
+                >
+                <Box 
+                    sx={{
+                        
+                        display:'flex',
+                        flexDirection:'row',
+                        gap:{ xs: 1, sm: 2, md: 4,lg:6,xl:4},
+                        border:'1px solid black',
+                    }}
+                    className="scrollerTrack"
+                    >
+                    {skillsimg.map(pic => <img src={pic} />) }
                 </Box>
             </Box>
         </Box>
