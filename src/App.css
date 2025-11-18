@@ -26,7 +26,7 @@
 
 .scrollerTrack {
   display: flex;
-  animation: scroll 2s linear infinite;
+  animation: scroll 10s linear infinite;
   width:max-content;
   height:100%;
 
