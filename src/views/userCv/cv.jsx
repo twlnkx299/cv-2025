@@ -69,7 +69,7 @@ const cv = () => {
                     gap:3,
                 }}>
                     <Typography variant="h1"
-                        sx={{fontSize:{ xs:12, sm:14, md:16, lg:18, xl:20}}}>Personal Details</Typography>
+                        sx={{fontSize:{ xs:12, sm:14, md:16, lg:18, xl:20},border:'1px solid black'}}>Personal Details</Typography>
                     
                     {/* name box */}
                     <Box className="scrollableAddress" sx={{display:'flex',flexDirection:'row',alignItems:'center',overflow:'auto'}}>
@@ -204,16 +204,17 @@ const cv = () => {
         {/* skills pics */}
         <Box 
             sx={{
-                border:'1px soplid black',
+                border:'1px solid black',
                 width:'100vw',
                 height:'10vh',
                 justifyContent:'center',
                 alignItems:'center',
                 display:'flex',
+                // backgroundColor:'#F0F4F8',
             }}>
             <Box 
                 sx={{
-                    border:'1px soplid black',
+                    //border:'1px soplid black',
                     width:'90vw',
                     height:'10vh',
                     backgroundColor:'#D7E0EB',
@@ -227,7 +228,7 @@ const cv = () => {
                         display:'flex',
                         flexDirection:'row',
                         gap:{ xs: 1, sm: 2, md: 4,lg:6,xl:4},
-                        border:'1px solid black',
+                        //border:'1px solid black',
                     }}
                     className="scrollerTrack"
                     >
@@ -237,7 +238,8 @@ const cv = () => {
         </Box>
 
         {/*parent box for educ and roles */}
-        <Box sx={{
+        <Box 
+            sx={{
                 border:'1px solid black',
                 flexDirection:'row',
                 display:'flex',
@@ -245,16 +247,63 @@ const cv = () => {
                 justifyContent:'center',
                 alignItems:'center',
                 width:'100vw',
-                height:'30vh',p:2}}>
-            <Box sx={{
-                //border:'1px solid black',
-                width:{ xs: 100, sm: 150, md: 250,lg:400,xl:450},
-                height: { xs: 150, sm: 160, md: 170,lg:180,xl:200},
-                backgroundColor:'#D7E0EB',
-                borderRadius:2,
+                height:'30vh',
+                p:2}}>
+
+            {/* education box */}
+            <Box 
+                className="scrollableAddress"
+                sx={{
+                    //border:'1px solid black',
+                    width:{ xs: 100, sm: 150, md: 250,lg:400,xl:450},
+                    height: { xs: 150, sm: 160, md: 170,lg:180,xl:200},
+                    backgroundColor:'#D7E0EB',
+                    borderRadius:2,
+                    display:'flex',
+                    overflowY:'auto',
+                    overflowX:'hidden'
             }}>
-                <Typography variant="h1"sx={{fontSize:{ xs:12, sm:14, md:16, lg:18, xl:20}}}>Education</Typography>
+                
+                <Box sx={{
+                    display:'flex',
+                    flexDirection:'column',
+                    gap:2,
+                    //border:'1px solid black',
+                }}>
+
+                    {/* bsit box */}    
+                    <Box sx={{
+                        display:'flex',
+                        border:'1px  solid black',
+                        width:{ xs:6, sm:9, md:16, lg:18, xl:432},
+                        height:'auto',
+                        p:1,
+                        flexDirection:'column',
+                        gap:0.5 
+                    }}>
+                        <Typography variant="h1"sx={{fontSize:{ xs:12, sm:14, md:16, lg:18, xl:20},fontWeight:'bold'}}>Education</Typography>
+                        <Box>
+                            <Typography variant="h1" sx={{fontSize:{ xs:6, sm:9, md:16, lg:18, xl:20},textAlign:'left',border:'1px solid black',}}>Bachelor of Science in Information Technology</Typography>
+                            <Typography variant="h1" sx={{fontSize:{ xs:6, sm:9, md:16, lg:18, xl:20},textAlign:'center',border:'1px solid black'}}>Tertiary Education | 2021 - 2025</Typography>
+                            <Typography variant="h1" sx={{fontSize:{ xs:6, sm:9, md:16, lg:18, xl:20},textAlign:'center',border:'1px solid black',}}>TUP - Taguig Campus</Typography>
+                        </Box>
+
+                        <Box>
+                            <Typography variant="h1" sx={{fontSize:{ xs:6, sm:9, md:16, lg:18, xl:20},textAlign:'left',border:'1px solid black',}}>Bachelor of Science in Information Technology</Typography>
+                            <Typography variant="h1" sx={{fontSize:{ xs:6, sm:9, md:16, lg:18, xl:20},textAlign:'center',border:'1px solid black'}}>Tertiary Education | 2021 - 2025</Typography>
+                            <Typography variant="h1" sx={{fontSize:{ xs:6, sm:9, md:16, lg:18, xl:20},textAlign:'center',border:'1px solid black',}}>TUP - Taguig Campus</Typography>
+                        </Box>
+
+                        <Box>
+                            <Typography variant="h1" sx={{fontSize:{ xs:6, sm:9, md:16, lg:18, xl:20},textAlign:'left',border:'1px solid black',}}>Bachelor of Science in Information Technology</Typography>
+                            <Typography variant="h1" sx={{fontSize:{ xs:6, sm:9, md:16, lg:18, xl:20},textAlign:'center',border:'1px solid black'}}>Tertiary Education | 2021 - 2025</Typography>
+                            <Typography variant="h1" sx={{fontSize:{ xs:6, sm:9, md:16, lg:18, xl:20},textAlign:'center',border:'1px solid black',}}>TUP - Taguig Campus</Typography>
+                        </Box>
+                    </Box>
+                </Box>
             </Box>
+
+            {/* roles box*/}
             <Box
                 sx={{
                     //border:'1px solid black',
@@ -267,7 +316,8 @@ const cv = () => {
             </Box>
         </Box>
 
-        <Box sx={{
+        <Box 
+            sx={{
                 border:'1px solid black', 
                 display:'flex',
                 justifyContent:'center',
@@ -275,15 +325,16 @@ const cv = () => {
                 width:'100vw',
                 height:'45vh'
             }}>
-            <Box sx={{
-                border:'1px solid black', 
-                backgroundColor:'#D7E0EB',
-                borderRadius:2,
-                display:'flex',
-                justifyContent:'center',
-                // alignItems:'center',
-                width:{ xs: 450, sm: 550, md: 650,lg:750,xl:1360},
-                height: { xs: 150, sm: 160, md: 170,lg:180,xl:300},
+            <Box 
+                sx={{
+                    border:'1px solid black', 
+                    backgroundColor:'#D7E0EB',
+                    borderRadius:2,
+                    display:'flex',
+                    justifyContent:'center',
+                    // alignItems:'center',
+                    width:{ xs: 450, sm: 550, md: 650,lg:750,xl:1360},
+                    height: { xs: 150, sm: 160, md: 170,lg:180,xl:300},
             }}>
                 <Typography variant="h1"sx={{fontSize:{ xs:12, sm:14, md:16, lg:18, xl:20}}}>On-the-Job Experience</Typography>
             </Box>
