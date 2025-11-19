@@ -315,6 +315,13 @@ const cv = () => {
                         gap:0.5 ,
                 }}>
                     <Typography variant="h1"sx={{fontSize:{ xs:12, sm:14, md:16, lg:18, xl:20}}}>Roles & Responsibiliies During Capstone</Typography>
+                    <Box>Project Liaison/Documentation Lead/Data Acquisition Lead</Box>
+                    {/* //box for roles */}
+                 
+                        <ul className='bullets' style={{listStyleType:'square',listStylePosition:'inside',border:'1px solid black',paddingLeft:0,}}>
+                            <li>df</li>
+                            <li>df</li>
+                        </ul>
                     
                 </Box>
             </Box>
