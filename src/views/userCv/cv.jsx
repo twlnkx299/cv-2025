@@ -238,7 +238,7 @@ const cv = () => {
         </Box>
 
         {/*parent box for educ and roles */}
-        <Box 
+            <Box 
             sx={{
                 border:'1px solid black',
                 flexDirection:'row',
@@ -254,24 +254,15 @@ const cv = () => {
             <Box 
                 className="scrollableAddress"
                 sx={{
-                    //border:'1px solid black',
+                    border:'1px solid black',
                     width:{ xs: 100, sm: 150, md: 250,lg:400,xl:450},
                     height: { xs: 150, sm: 160, md: 170,lg:180,xl:200},
                     backgroundColor:'#D7E0EB',
                     borderRadius:2,
-                    display:'flex',
                     overflowY:'auto',
                     overflowX:'hidden'
             }}>
-                
-                <Box sx={{
-                    display:'flex',
-                    flexDirection:'column',
-                    gap:2,
-                    //border:'1px solid black',
-                }}>
-
-                    {/* bsit box */}    
+                    {/* school box */}    
                     <Box sx={{
                         display:'flex',
                         border:'1px  solid black',
@@ -279,7 +270,7 @@ const cv = () => {
                         height:'auto',
                         p:1,
                         flexDirection:'column',
-                        gap:0.5 
+                        gap:0.5 ,
                     }}>
                         <Typography variant="h1"sx={{fontSize:{ xs:12, sm:14, md:16, lg:18, xl:20},fontWeight:'bold'}}>Education</Typography>
                         <Box>
@@ -300,19 +291,32 @@ const cv = () => {
                             <Typography variant="h1" sx={{fontSize:{ xs:6, sm:9, md:16, lg:18, xl:20},textAlign:'center',border:'1px solid black',}}>TUP - Taguig Campus</Typography>
                         </Box>
                     </Box>
-                </Box>
             </Box>
 
             {/* roles box*/}
             <Box
                 sx={{
-                    //border:'1px solid black',
+                        border:'1px solid black',
                     width:{ xs: 450, sm: 550, md: 650,lg:750,xl:850},
                     height: { xs: 150, sm: 160, md: 170,lg:180,xl:200},
                     backgroundColor:'#D7E0EB',
                     borderRadius:2,
+                    overflowY:'auto',
+                    overflowX:'hidden'
+            }}>
+                <Box 
+                    sx={{
+                        display:'flex',
+                        border:'1px  solid black',
+                        width:{ xs:6, sm:9, md:16, lg:18, xl:432},
+                        height:'auto',
+                        p:1,
+                        flexDirection:'column',
+                        gap:0.5 ,
                 }}>
-                <Typography variant="h1"sx={{fontSize:{ xs:12, sm:14, md:16, lg:18, xl:20}}}>Roles & Responsibiliies During Capstone</Typography>
+                    <Typography variant="h1"sx={{fontSize:{ xs:12, sm:14, md:16, lg:18, xl:20}}}>Roles & Responsibiliies During Capstone</Typography>
+                    
+                </Box>
             </Box>
         </Box>
 
