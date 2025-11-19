@@ -270,7 +270,7 @@ const cv = () => {
                     gap:2,
                     //border:'1px solid black',
                 }}>
-                    
+
                     {/* bsit box */}    
                     <Box sx={{
                         display:'flex',
@@ -302,7 +302,6 @@ const cv = () => {
                     </Box>
                 </Box>
             </Box>
-
 
             {/* roles box*/}
             <Box
