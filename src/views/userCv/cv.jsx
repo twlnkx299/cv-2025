@@ -23,12 +23,12 @@ import C from '../../assets/cvpic/c++.png';
 
 const cv = () => {
     
-    //addr must be  just 30 chars long
+    //addr must be  just 30 chars long  
     const addr ="#1 Tondo Divisoria Market, Metro Manila NCR#1 Tondo Divisoria Market, Metro Manila NCR";
     const skillsimg = [Git,Github,Css,Html,Jsreact,Ts,Sql,Wordpress,Joom,Laravel,Trello,Jira,Figma,Electron,Cicd,Mern,C];
   return (
     <Grid container sx={{ minHeight: "100vh", width:"100vw",overflowY:'auto',
-    //overflowX:'hidden'
+    overflowX:'hidden'
     }}>
        <Box sx={{display:'flex',flexDirection:'column',gap:1}}>
         <Box sx={{backgroundColor:'#24457A', height:"10vh", width:"100vw",display:'flex',flexDirection:'column',gap:3}}></Box>
@@ -44,7 +44,8 @@ const cv = () => {
                 height:'31vh',
                 justifyContent:'center',
                 alignItems:'center',
-                p:2
+                p:2,
+                overflowX:'auto'
                 }}>
             {/* children boxes */}
             <Box
@@ -252,6 +253,7 @@ const cv = () => {
                 alignItems:'center',
                 width:'100vw',
                 height:'30vh',
+                overflowY:'auto',
                 p:2}}>
 
             {/* education box */}
