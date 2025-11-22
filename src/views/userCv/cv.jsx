@@ -296,7 +296,7 @@ const cv = () => {
             {/* roles box*/}
             <Box
                 sx={{
-                        border:'1px solid black',
+                    border:'1px solid black',
                     width:{ xs: 450, sm: 550, md: 650,lg:750,xl:850},
                     height: { xs: 150, sm: 160, md: 170,lg:180,xl:200},
                     backgroundColor:'#D7E0EB',
@@ -308,19 +308,27 @@ const cv = () => {
                     sx={{
                         display:'flex',
                         border:'1px  solid black',
-                        width:{ xs:6, sm:9, md:16, lg:18, xl:432},
+                        width:{ xs:360, sm:520, md:620, lg:720, xl:840},
                         height:'auto',
+                        //width:'100%',
+                        //height:{ xs: 150, sm: 160, md: 170,lg:180,xl:150},
                         p:1,
+                        
                         flexDirection:'column',
                         gap:0.5 ,
                 }}>
                     <Typography variant="h1"sx={{fontSize:{ xs:12, sm:14, md:16, lg:18, xl:20}}}>Roles & Responsibiliies During Capstone</Typography>
-                    <Box>Project Liaison/Documentation Lead/Data Acquisition Lead</Box>
+                    <Typography sx={{fontSize:{ xs:12, sm:14, md:16, lg:18, xl:20},fontWeight:'lighter'}}>Project Liaison/Documentation Lead/Data Acquisition Lead</Typography>
                     {/* //box for roles */}
-                 
-                        <ul className='bullets' style={{listStyleType:'square',listStylePosition:'inside',border:'1px solid black',paddingLeft:0,}}>
-                            <li>df</li>
-                            <li>df</li>
+                    
+                        <ul className='bullets' style={{textAlign:'left',listStyleType:'square',listStylePosition:'outside',border:'1px solid black',paddingLeft:"20px",}}>
+                            <li style={{fontSize:{ xs:12, sm:14, md:16, lg:18, xl:20}}}>Gained hands-on experience in web and mobile development using Typescript, React.js and React Native.</li>
+                            <li>Used project management tools like Jira and Clockify to track task, time, and stay aligned with project goals and deadlines.</li>
+                            <li>Experienced agile practices in a team setting and participated in manual software testing.</li>
+                            <li>Used Git for version control and effective collaboration.</li>
+                            <li>Improved my debugging and problem-solving skills by identifying and resolving issues during development.</li>
+                            <li>Strengthened adaptability and learned to stay composed when dealing with tight deadlines and changing requirements.</li>
+                            <li>Cultivated a growth mindset, embracing challenges to continuously improve technical and professional skills.</li>
                         </ul>
                     
                 </Box>
