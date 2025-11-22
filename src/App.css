@@ -13,3 +13,34 @@
   scrollbar-width: thin;
   scrollbar-color: #1976d2 #e0e0e0;
 }
+
+/* .pic {
+  transform:skewX(10deg);
+} */
+
+.scroller {
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+}
+
+.scrollerTrack {
+  display: flex;
+  animation: scroll 10s linear infinite;
+  width:max-content;
+  height:100%;
+
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.bullets li {
+  margin-left: 20px;
+}
